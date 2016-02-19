@@ -79,14 +79,72 @@
 		</div>
 	</div>
 <!--//Информационный блок на главной странице-->
-		<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+
+<!--Услуги-->
+<h2 class="ta_center">Услуги компании</h2>
+<div class="usl_main">
+<ul>
+	<li>
+		<img src="images/ico_usl1.png">
+	<div class="txt_div">
+		<h3>Консультации</h3>
+		<p>Наши специалисты с радостью помогут в выборе наиболее правильных решений по нашим продуктам</p>
+	</div>
+	</li>
+	<li>
+		<img src="images/ico_usl2.png">
+	<div class="txt_div">
+		<h3>Подбор</h3>
+		<p>Подбор необходимых размеров наших профилей исходя из расчетов</p>
+	</div>
+	</li>
+	<li>
+		<img src="images/ico_usl3.png">
+	<div class="txt_div">
+		<h3>Черчение</h3>
+		<p>Разработка чертежей и проектов</p>
+	</div>
+	</li>
+		<li>
+			<img src="images/ico_usl4.png">
+	<div class="txt_div">
+		<h3>Индивидуальная разработка</h3>
+		<p>Разработка новых типов профилей под конкретные проекты и технические условия</p>
+	</div>
+	</li>
+			<li>
+				<img src="images/ico_usl5.png">
+	<div class="txt_div">
+		<h3>Техническая поддержка</h3>
+		<p>На всех этапах от согласования до установки</p>
+	</div>
+	</li>
+				<li>
+		<img src="images/ico_usl6.png">
+	<div class="txt_div">
+		<h3>Установка</h3>
+		<p>Предоставление полного сервиса по установке профильных систем, включая монтаж на объекте</p>
+	</div>
+	</li>
+</ul>
+<div class="ta_right">
+	<a href="#" class="btn">Подробнее<i class="fa fa-angle-right"></i></a>
+</div>	
+</div>
+<!--//Услуги-->
+
+<!--Поиск продукции-->
+<h2 class="ta_center"><i class="fa fa-search"></i>Поиск продукции</h2>
+<!--//Поиск продукции-->
 	</div>
 	</main><!-- .content -->
 
 </div><!-- .wrapper -->
 
 <footer class="footer">
+<div class="container">
 	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+	</div>
 </footer><!-- .footer -->
 
 </body>
