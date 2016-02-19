@@ -7,6 +7,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
@@ -14,12 +15,72 @@
 
 <div class="wrapper">
 
+	
+	<div class="container">
 	<header class="header">
-		<strong>Header:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor. Praesent dictum, libero ut tempus dictum, neque eros elementum mauris, quis mollis arcu velit ac diam. Etiam neque. Quisque nec turpis. Aliquam arcu nulla, dictum et, lacinia a, mollis in, ante. Sed eu felis in elit tempor venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ultricies porttitor purus. Proin non tellus at ligula fringilla tristique. Fusce vehicula quam. Curabitur vel tortor vitae pede imperdiet ultrices. Sed tortor.
+	<div class="table">
+		<div class="row">
+			<div class="cell">
+			<div class="logo">
+		<img src="images/logo.png" alt="Dewmark системы деформационных швов">
+			</div>
+			</div>
+
+			<div class="cell ta_right">
+		<!--Верхнее меню-->
+			<div class="top_menu">
+				<ul>
+					<li><i class="fa fa-expand"></i><a href="#">Продукция</a></li>
+					<li>
+						<a href="#">Компания</a>
+						<ul class="child">
+							<li><a href="#">Сертификаты</a></li>
+							<li><a href="#">Реализованные проекты</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		<!--//Верхнее меню-->
+			</div>
+		</div>
+	</div>
 	</header><!-- .header-->
+	</div>
 
 	<main class="content">
+	<div class="blue_div">
+		<div class="container">
+		<h1>Системы деформационных швов</h1>
+		<p>Профили для деформационных швов являются важным элементом здания. Они должны не только обеспечивать  надежность эксплуатации, компенсируя деформации и нагрузки, возникающие в здании, но, и, являясь частью  интерьера, должны иметь привлекательный дизайн.  Номенклатура компании "Дьюмарк" позволяет подобрать  профили по всем параметрам, заявленным архитекторами и проектировщиками.</p>
+		</div>
+	</div>
+	<div class="container">
+
+<!--Информационный блок на главной странице-->
+	<div class="main_info">
+		<div class="left_div">
+			<img src="images/main.jpg">
+		</div>
+		<div class="right_div">
+<h2>О нас</h2>
+<p>Компания "Дьюмарк" - российская компания, работающая на рынке деформационных швов с 2007 года.  Наши инженеры проектируют и создают профили для деформационных швов для самых различных объектов на территории как России, так и всего мира.</p>
+<hr />
+<div class="ta_center">
+<ul class="about_main">
+	<li><img src="images/ico1.png"><p>Вся продукция компании "Dewmark" имеет сертификаты на территории России</p></li>
+	<li><img src="images/ico2.png"><p>Поставщиками исходного сырья являются ведущие компании России и Европы</p></li>
+	<li><img src="images/ico3.png"><p>Продукция выпускается на современном оборудовании и отвечает всем мировым стандартам</p></li>
+	<li><img src="images/ico4.png"><p>Наши специалисты всегда готовы проконсультировать Вас при выборе деформационных швов</p></li>
+</ul>
+	</div>
+		</div>
+	</div>
+<!--//Информационный блок на главной странице-->
 		<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+	</div>
 	</main><!-- .content -->
 
 </div><!-- .wrapper -->
