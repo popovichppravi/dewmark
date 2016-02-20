@@ -135,6 +135,23 @@
 
 <!--Поиск продукции-->
 <h2 class="ta_center"><i class="fa fa-search"></i>Поиск продукции</h2>
+<div class="search_filter ta_center">
+<form action="/">
+	<h3>Нагрузка</h3>
+	<p class="info_i"><i class="fa fa-info"></i>выберите один или несколько типов нагрузки</p>
+	<div class="nagruzka">
+		<input type="checkbox" name="typetr" value="peshehod" id="typetrv1" >
+		<label for="typetrv1" >Пешеход<img class="img_position" src="images/man_bl.png" alt="Пешеход" title="Пешеход"></label>
+		
+		<input type="checkbox" name="typetr" value="avto" id="typetrv2" >
+		<label for="typetrv2" >Автомобиль<img class="img_position" src="images/car_bl.png" alt="Автомобиль" title="Автомобиль"></label>
+		
+		<input type="checkbox" name="typetr" value="pogruz" id="typetrv3" ><label for="typetrv3" >Погрузчик<img class="img_position" src="images/pogruz_bl.png" alt="Погрузчик" title="Погрузчик"></label>
+		
+		<input type="checkbox" name="typetr" value="rokla" id="typetrv4" ><label for="typetrv4" >Рокла<img class="img_position" src="images/rokla_bl.png" alt="Рокла" title="Рокла"></label>
+</div>
+</form>
+</div>
 <!--//Поиск продукции-->
 	</div>
 	</main><!-- .content -->
