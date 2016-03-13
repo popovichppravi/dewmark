@@ -8,6 +8,11 @@
 	<meta name="description" content="" />
 	<link href="styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/diapazon.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script type="text/javascript" src="js/snap.svg.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
@@ -150,8 +155,163 @@
 		
 		<input type="checkbox" name="typetr" value="rokla" id="typetrv4" ><label for="typetrv4" >Рокла<img class="img_position" src="images/rokla_bl.png" alt="Рокла" title="Рокла"></label>
 </div>
+<div id="change_left">Увеличить</div>
+<svg id="filter_profile" ></svg>
+<div class="table inputs_search">
+	<div class="cell">
+		<div class="inputs_div">
+			<div class="input_item">	
+				<h3>Ширина шва</h3>
+				<p>Если ширина шва отличается по длине то указываете наибольшую величину</p>
+				<div class="formCost">
+					<input type="text" id="minCost" value="0" placeholder="от" /><span>&mdash;</span><input type="text" id="maxCost" placeholder="до" value="1000"/>
+				</div>
+				<div class="trackbarCont">
+					<div id="trackbar"></div>
+				</div>
+			</div>
+			<div class="input_item">	
+				<h3>Горизонтальные деформации, мм:</h3>
+				<p>Указывайте суммарную величину деформаций. Например, при деформациях +/-10 мм - их сумма будет 20 мм.</p>
+				<input class="input_filrt" type="text" placeholder="введите значение (пример: 20)" />
+			</div>
+		</div>
+	</div>	
+	<div class="cell">
+		<div class="inputs_div">
+			
+		<div class="input_item">	
+			<h3>Расположение</h3>
+            <input class="radio" type="radio" name="where" id="VR" value="Стена/Потолок" checked="checked"><label for="VR">Стена/Потолок</label><input class="radio" type="radio" name="where" id="TV" value="Пол"><label for="TV">Пол</label><br />
+        </div>
+        <div class="input_item">  
+            <h3>Вертикальные деформации</h3>
+			<p>Укажите, если будут вертикальные сдвиги плит относительно друг друга.</p>
+			<input class="checkbox" type="checkbox" name="typetr" value="yes" id="vert" /><label for="vert" >Да</label>
+		</div>
+		<div class="input_item">
+            <h3>Водонепроницаемость</h3>
+			<p>Укажите, если теребуется гидроизоляция шва</p>
+			<input class="checkbox" type="checkbox" name="typetr" value="yes" id="water" /><label for="water" >Да</label>
+		</div>
+
+		</div>
+	</div>
+</div>
+<div class="ta_center">
+				<button class="btn">Найти<i class="fa fa-angle-right"></i></button>
+			</div>
 </form>
 </div>
+
+<script type="text/javascript">
+ window.onload = function () {
+var s = Snap("#filter_profile");
+Snap.load("svg/21-30.svg", function (f) {
+s.append(f);
+  var left_part=s.select("#LWPOLYLINE polygon");
+});
+}
+</script>
+<section class="raz" id="razpolyline">
+<pre style="display: none">
+&lt;svg&gt;
+  &lt;polygon points="<b>100.2710419,49.6473236 100.2710419,16.9459248 102.2569351,14.8941975 106.7251892,10.4259377 106.7251892,9.9294643	106.7251892,4.9647326 108.7110825,4.9647326 108.7110825,2.9788396 104.739296,2.9788396 104.739296,9.9294643 103.3350601,11.333703 101.7604599,11.333703 100.2710419,8.9365187 100.2710419,4.9647326 101.7604599,4.9647326 101.7604599,2.9788396 100.2710419,2.9788396 100.2710419,0.0000002 98.2851486,0.0000002 98.2851486,12.9083042 98.2851486,47.6614304 36.7224655,47.6614304 36.7224655,49.6473236</b>" stroke="red" stroke-width="3" /&gt;
+&lt;/svg&gt;
+</pre>
+
+<div id="ranges1"></div>
+<script>
+var RazMyPolylineI = document.querySelectorAll('#razpolyline input');
+for (var i = 0; i < RazMyPolylineI.length; i++) {
+  RazMyPolylineI[i].onchange = razpolyline;
+  RazMyPolylineI[i].oninput = razpolyline;
+}
+function razpolyline() {
+	var raz="";
+	raz=raz+RazMyPolylineI[0].value+','+RazMyPolylineI[1].value+' ';
+for (var i = 2; i < RazMyPolylineI.length; i++) {	
+raz=raz+RazMyPolylineI[i].value;
+if (i & 1) {raz=raz+",";}
+else {raz=raz+" ";}
+}
+if (raz[raz.length]==",") {raz=raz.substring(0, raz.length - 1);}
+  document.querySelector('#HATCH_3_ polygon').setAttribute('points', raz);
+  document.querySelectorAll('#razpolyline b')[0].innerHTML = raz;
+}
+</script>
+</section>
+	
+	<div id="points_polygon" style="display: none;"></div>
+	<script type="text/javascript">
+$("#change_left").click(
+function ()
+{
+points1=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
+move_points('#LWPOLYLINE polygon', points1, -1);
+points2=[0,6,8];
+move_points('#HATCH_8_ polygon', points2, -1);
+points3=[2,4];
+move_points('#HATCH polygon', points3, -1);
+width1=$("#rect2").attr("width")-1;
+width2=$("#rect3").attr("width")-1;
+$("#rect2").attr("width", width1);
+$("#rect3").attr("width", width2);
+/*правая сторона*/
+points4=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
+move_points('#LWPOLYLINE_5_ polygon', points4, 1);
+points5=[2,4];
+move_points('#HATCH_9_ polygon', points5, 1);
+points6=[2,4];
+move_points('#HATCH_4_ polygon', points6, 1);
+width3=$("#rect1").attr("width")-1;
+width4=$("#rect4").attr("width")-1;
+$("#rect1").attr("width", width3);
+$("#rect4").attr("width", width4);
+x3=parseFloat($("#rect1").attr("x"))+1;
+x4=parseFloat($("#rect4").attr("x"))+1;
+$("#rect1").attr("x", x3);
+$("#rect4").attr("x", x4);
+/*центральная часть*/
+points7=[48,46,44,42,40,38,36,34,32,30,28,26,24,22,20,18,16,14,12,10];
+move_points('#HATCH_3_ polygon', points7, 1);
+points8=[80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118];
+move_points('#HATCH_3_ polygon', points8, -1);
+}
+);
+function move_points(id, points, val)
+{
+points_string=$(id).attr("points");
+//points_string = points_string.replace(/\r|\n|\t/g, '');
+//points_string=points_string.replace(/ /ig, ',');
+points_string = points_string.replace(/\s/ig, ',');
+//if (points_string[points_string.length]==",") {points_string=points_string.substring(0, points_string.length - 1);}
+points_array=points_string.split(",");
+string="";
+ranges = document.getElementById('ranges');
+/*ranges.innerHTML="";
+for (var i = 0; i <= points_array.length; i++) 
+{
+	ranges.innerHTML+='</td></tr><tr><td><input type="range" min="-100" max="300" step="0.0000001"  value="'+points_array[i]+'">'+i+'<br />';
+}*/
+for (var i = 0; i <= points.length; i++) {
+	points_array[points[i]]=parseFloat(points_array[points[i]])+val;
+	string=string+", "+points_array[points[i]];
+};
+
+raz="";
+i=0;
+raz=raz+points_array[0]+','+points_array[1]+' ';
+for (var i = 2; i < points_array.length; i++) {	
+raz=raz+points_array[i];
+if (i & 1) {raz=raz+",";}
+else {raz=raz+" ";}
+}
+if (raz[raz.length-1]==",") {raz=raz.substring(0, raz.length - 1);}
+  document.querySelector(id).setAttribute('points', raz);
+$("#points_polygon").html(string);
+}
+	</script>
 <!--//Поиск продукции-->
 	</div>
 	</main><!-- .content -->

@@ -150,6 +150,7 @@ hr
 {
 	text-decoration: none;
 	border: 1px solid #25B8D7;
+	background: #fff;
 	padding: 4px 10px;
 	    border-radius: 5px;
     -moz-border-radius: 5px;
@@ -158,7 +159,9 @@ hr
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
-    transition: 0.5s;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #25B8D7;
 }
 
 .btn i
@@ -180,7 +183,115 @@ hr
 	vertical-align: middle;
 }
 
+input[type="text"]
+{
+	border: 1px solid #25B8D7;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 5px 10px;
+}
 
+/*radio + checkbox*/
+.checkbox {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 45px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 35px;
+  height: 16px;
+  border-radius: 16px;
+   border: 1px solid #202639;
+  background: #FFF;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #FFF;
+  border: 1px solid #202639;
+  transition: all .2s;
+}
+.checkbox:checked + label:before {
+  background: #25B8D7;
+}
+.checkbox:checked + label:after {
+  left: 20px;
+}
+.checkbox:focus + label:before {
+
+}
+
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio + label {
+  cursor: pointer;
+}
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 20px;
+  margin-right: 20px;
+}
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #202639;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #202639;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: all .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+.radio:focus + label:before {
+
+}
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
@@ -235,6 +346,8 @@ height: 80px;
 -----------------------------------------------------------------------------*/
 .content {
 	padding: 0 0 100px;
+	    width: 100%;
+    min-width: 1000px;
 }
 
 .blue_div
@@ -334,6 +447,7 @@ vertical-align: middle;
 .search_filter h3
 {
 color: #25B8D7;
+margin-bottom: 5px;
 }
 
 .nagruzka input[type="checkbox"]
@@ -370,13 +484,150 @@ color: #fff;
 border: 1px solid #25B8D7;
 }
 
+/*поля ввода поиска*/
+.inputs_search .input_item
+{
+margin-bottom: 15px;
+}
+.inputs_search h3
+{
+margin-bottom: 5px;
+}
 
+.inputs_search .cell
+{
+	vertical-align: top;
+}
+.inputs_search .inputs_div
+{
+	width: 450px;
+}
+
+.inputs_search .input_filrt
+{
+	width: 200px;
+}
+
+
+/*Анимация поиска*/
+#filter_profile
+{
+	width: 80%;
+	height: 240px;
+}
+
+#LWPOLYLINE polygon
+{
+	z-index: 200;
+}
+#ranges1
+{
+	display: none;
+}
+line, rect, circle, ellipse, path, text {
+    vector-effect: non-scaling-stroke;
+}
+
+line,
+rect,
+circle,
+ellipse,
+path,
+text {
+  vector-effect: non-scaling-stroke;
+}
+
+/* основная */
+.lt1 {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2;
+}
+/* тонкая */
+.lt2 {
+  fill: none;
+  stroke: black;
+  stroke-width: .7;
+}
+/* осевая */
+.lt3 {
+  fill: none;
+  stroke: red;
+  stroke-width: .7;
+  stroke-dasharray: 25, 4, 3, 4;
+}
+/* штриховая */
+.lt4 {
+  fill: none;
+  stroke: black;
+  stroke-width: .7;
+  stroke-dasharray: 7, 4;
+}
+/* для линии обрыва */
+.lt5 {
+  fill: none;
+  stroke: black;
+  stroke-width: .7;
+}
+/* утолщеная */
+.lt7 {
+  fill: none;
+  stroke: teal;
+  stroke-width: 3.3;
+}
+/* пунктир 2 */
+.lt8 {
+  fill: none;
+  stroke: black;
+  stroke-width: .7;
+  stroke-dasharray: 25, 4, 3, 4, 3, 4;
+}
+/* штриховая осн. */
+.lt9 {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2;
+  stroke-dasharray: 10, 5;
+}
+/* осевая осн. */
+.lt10 {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2;
+  stroke-dasharray: 25, 5, 3, 5;
+}
+/* тонкая */
+.lt11 {
+  fill: none;
+  stroke: black;
+  stroke-width: .5;
+}
+
+/* основная для масштаба 0.25 */
+.lt1_025 {
+  fill: none;
+  stroke: blue;
+  stroke-width: 8;
+}
+
+/* тонкая для масштаба 0.25 */
+.lt2_025 {    
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+/* тонкая линия, тип для точки, масштаба 0.25  */
+.pt1 {
+  fill: none;
+  stroke-width: 2;
+}
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	width: 100%;
+	    width: 100%;
+    min-width: 1000px;
 	margin: -100px auto 0;
 	height: 100px;
 	background: #202639;

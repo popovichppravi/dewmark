@@ -1,0 +1,112 @@
+.formCost {
+	margin-bottom: 10px;
+	    height: 30px;
+}
+.formCost label {
+	float: left;
+	font-size: 12px;
+	color: #E40000;
+	font-weight: bold;
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+.formCost input {
+	width: 70px; 
+	display: inline-block;
+	text-align: center;
+	}
+.formCost span
+{
+	margin: 0 10px;
+}
+
+.trackbarCont {
+	width: 220px;
+	height: 27px;
+	margin: auto;
+
+}		
+
+#trackbar {
+	width: 218px;
+}
+
+.ui-slider {
+	position: relative;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 12px;
+	height: 12px;
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: 1px solid #202639;
+	background: #fff;
+	cursor: pointer;
+	outline: none;
+}
+.ui-slider .ui-slider-handle:after
+{
+	content: "";
+	display: inline-block;
+	top: 3px;
+	left: 3px;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+		-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: #202639;
+z-index: 100;
+
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	overflow: hidden;
+}
+.ui-slider-horizontal {
+	 height: 8px;
+}
+.ui-slider-horizontal .ui-slider-handle { 
+	top: -4px;
+	margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-widget-content { 
+	border: 1px solid #D4D4D4;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+0,dbdbdb+100 */
+background: #f2f2f2; /* Old browsers */
+background: -moz-linear-gradient(top,  #f2f2f2 0%, #dbdbdb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f2f2f2 0%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f2f2f2 0%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+.ui-widget-header { 
+	border: 1px solid #D4D4D4;
+	background: #25B8D5;
+}
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
