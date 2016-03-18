@@ -46,7 +46,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 body {
 	 font-family: 'texgyreadventorregular';
-	 font-size: 16px;
+	 font-size: 14px;
 	width: 100%;
 	height: 100%;
 	color: #202639;
@@ -69,7 +69,10 @@ p
 	margin-bottom: 10px;
 	display: block;
 }
-
+strong
+{
+	font-weight: bold;
+}
 h1,h2,h3
 {
 	font-weight: normal;
@@ -213,7 +216,7 @@ padding: 5px 10px;
 .checkbox:not(checked) + label:before {
   content: '';
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 0;
   width: 35px;
   height: 16px;
@@ -225,7 +228,7 @@ padding: 5px 10px;
 .checkbox:not(checked) + label:after {
   content: '';
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 2px;
   width: 12px;
   height: 12px;
@@ -265,7 +268,7 @@ padding: 5px 10px;
 .radio:not(checked) + label:before {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 0;
   width: 12px;
   height: 12px;
@@ -276,7 +279,7 @@ padding: 5px 10px;
 .radio:not(checked) + label:after {
   content: '';
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 4px;
   width: 6px;
   height: 6px;
@@ -464,14 +467,15 @@ margin-bottom: 5px;
 	    border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    height: 25px;
+    height: 17px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
+    font-size: 14px;
 }
 .nagruzka label img
 {
-max-width: 35px;
-max-height: 25px;
+max-width: 30px;
+max-height: 20px;
 margin-left: 10px;
 vertical-align: middle;
 }
@@ -481,7 +485,7 @@ vertical-align: middle;
 {
 background: #25B8D7;
 color: #fff;
-border: 1px solid #25B8D7;
+
 }
 
 /*поля ввода поиска*/
@@ -621,6 +625,143 @@ text {
   fill: none;
   stroke-width: 2;
 }
+
+/*реализованные проекты (на главной)*/
+#compl_prj_main_svg
+{
+height: 300px;
+    width: 100%;
+}
+
+#compl_prj_main_svg path
+{
+	cursor: pointer;
+}
+
+.compl_prj_main
+{
+	position: relative;
+	margin-bottom: 30px;
+}
+.compl_prj_main .middle_prj
+{
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.compl_prj_main .middle_prj h3
+{
+	color: #22B7D7;
+}
+
+#prj_content1,
+#prj_content2,
+#prj_content3,
+#prj_content4,
+#prj_content5,
+#prj_content6,
+#prj_content7
+{
+	visibility: hidden;
+	display: none;
+}
+
+
+/*НОВОСТИ НА ГЛАВНОЙ*/
+.news_main ul
+{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+.news_main ul li
+{
+display: inline-block;
+width: 300px;
+vertical-align: top;
+margin: 0 10px;
+text-align: left;
+position: relative;
+}
+
+.news_main ul li img
+{
+	width: 300px;
+}
+.news_main ul li div.item_img
+{
+	display: inline-block;
+	position: relative;
+}
+.news_main ul li div.item_img::after
+{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background: rgba(37, 184, 215, 0.6);
+	width: 10px;
+	right: 0;
+	height: 100%;
+}
+
+.news_main ul li a
+{
+  display: table-cell;
+  height: 50px;
+  vertical-align: middle;	
+}
+
+.news_main ul li p
+{
+font-size: 14px;	
+}
+
+
+
+.news_main .line-details {
+    z-index:2;
+    position:relative;
+}
+
+.news_main .line-details div {
+	position:absolute;
+	height:45px;
+	width:45px;
+	text-align:center;
+	color:#fff; /* bluebox option 2 */
+}
+
+.news_main .line-details .line-date {
+	bottom:0;
+	left:0;
+	background-color: rgba(32, 38, 57, 0.82);/* bluebox option 1 */
+	line-height:16px;
+}
+
+.news_main .line-details .line-date strong {
+	font-weight:700;
+	line-height:20px;
+	margin-top:6px;
+	font-size:18px;
+	display:inline-block;
+	width:100%;
+}
+
+.news_main .line-details .line-date span {
+	position:absolute;
+	top:22px;
+	left:0;
+	right:0;
+	display:inline-block;
+	width:100%;
+}
+
+
 
 
 /* Footer

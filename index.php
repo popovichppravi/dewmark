@@ -8,6 +8,7 @@
 	<meta name="description" content="" />
 	<link href="styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" type="text/css" href="css/diapazon.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
@@ -206,7 +207,7 @@
 
 <script type="text/javascript">
  window.onload = function () {
-var s = Snap("#filter_profile");
+var s = Snap.select("#filter_profile");
 Snap.load("svg/21-30.svg", function (f) {
 s.append(f);
   var left_part=s.select("#LWPOLYLINE polygon");
@@ -313,6 +314,268 @@ $("#points_polygon").html(string);
 }
 	</script>
 <!--//Поиск продукции-->
+
+
+<!--Реализованные проекты-->
+<h2 class="ta_center">Реализованные проекты</h2>
+<p class="ta_center">Дьюмарк постоянно разрабатывает новые системы профилей и консультирует заказчиков по выбору профильных систем, что позволяет нам постоянно совершенствоваться и предлагать ВАМ все более надежные решения в строительстве.</p>
+	<div class="compl_prj_main">
+		<svg id="compl_prj_main_svg"></svg>
+		<div class="middle_prj">
+			<div id="prj_content1">
+				<h3>Торговые центры</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для торговых центров</p>
+			</div>
+			
+			<div id="prj_content2">
+				<h3>Гостиницы</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для гостиниц</p>
+			</div>
+
+			<div id="prj_content3">
+				<h3>Больницы</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для больниц</p>
+			</div>
+
+			<div id="prj_content4">
+				<h3>Аэропорты</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для аэропортов</p>
+			</div>
+
+			<div id="prj_content5">
+				<h3>Промышленные объекты</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для промышленных объектов</p>
+			</div>
+
+			<div id="prj_content6">
+				<h3>Транспортные объекты</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для транспортных сооружений</p>
+			</div>
+
+			<div id="prj_content7">
+				<h3>Спортивные комплексы</h3>
+				<p>Компания Dewmark раелизовала более 10 000 деформациионных швов для спортивных комплексов</p>
+			</div>
+
+			<a href="#" class="btn">Все проекты<i class="fa fa-angle-right"></i></a>
+		</div>
+<script type="text/javascript">
+var s1 = Snap.select("#compl_prj_main_svg");
+var bbox = 1;
+var grad = 0;
+var shadow = s1.filter(Snap.filter.shadow(1, 0.5, 0.7, "#202639", 0.5));
+Snap.load("svg/sv1.svg", function (f) 
+			{
+			  g_svg1=f.select("#g_svg1");
+			  path_svg1 = f.select("#path_svg1");
+			  ico_svg1=f.select("#ico_svg1");
+
+			  g_svg2=f.select("#g_svg2");
+			  path_svg2 = f.select("#path_svg2");
+			  ico_svg2=f.select("#ico_svg2");
+
+			  g_svg3=f.select("#g_svg3");
+			  path_svg3 = f.select("#path_svg3");
+			  ico_svg3=f.select("#ico_svg3");
+
+
+			  g_svg4=f.select("#g_svg4");
+			  path_svg4 = f.select("#path_svg4");
+			  ico_svg4=f.select("#ico_svg4");
+
+
+			  g_svg5=f.select("#g_svg5");
+			  path_svg5 = f.select("#path_svg5");
+			  ico_svg5=f.select("#ico_svg5");
+
+			  g_svg6=f.select("#g_svg6");
+			  path_svg6 = f.select("#path_svg6");
+			  ico_svg6=f.select("#ico_svg6");
+
+			  g_svg7=f.select("#g_svg7");
+			  path_svg7 = f.select("#path_svg7");
+			  ico_svg7=f.select("#ico_svg7");
+
+			  all_path=[path_svg1, path_svg2, path_svg3, path_svg4, path_svg5, path_svg6, path_svg7];
+			  all_ico=[ico_svg1, ico_svg2, ico_svg3, ico_svg4, ico_svg5, ico_svg6, ico_svg7];
+
+			  function sbros(numnot)
+			  {
+			   for (var i = 0; i < 7; i++) 
+			  	{
+			    	if (i+1!=numnot)
+			  		{
+			  		 	all_path[i].animate({fill: "#202639"}, 100);
+			  		 	all_path[i].animate({ transform: "r"+grad+"," + bbox.cx + ',' + bbox.cy + "s1," + bbox.cx + "," + bbox.cy}, 400,mina.bounce);
+			  		 	all_path[i].attr({ filter: "" });
+
+						all_ico[i].animate({ transform: "r0," + bbox.cx + ',' + bbox.cy + "s1," + bbox.cx + "," + bbox.cy}, 400, mina.bounce);	
+			  	 	}
+			  	}
+			  };
+
+			   function anim_path(path, ico, numcont)
+			  {
+					path.animate({fill: "#22B7D7"}, 100);
+					path.animate({ transform: "r"+grad+"," + bbox.cx + ',' + bbox.cy + "s1.1," + bbox.cx + "," + bbox.cy}, 400,mina.bounce);
+					path.attr({ filter: shadow });
+ 			  		ico.animate({ transform: "r"+grad+"," + bbox.cx + ',' + bbox.cy + "s1.5," + bbox.cx + "," + bbox.cy}, 400,mina.bounce);
+ 			  		$( ".middle_prj div" ).hide();
+ 			  		$( "#prj_content"+numcont ).show();
+ 			  		$( "#prj_content"+numcont ).addClass( "fadeIn" );
+			  };
+
+			  anim_path(path_svg1, ico_svg1, 1);
+ 			  				sbros(1);
+ 			  
+ 			  g_svg1.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  				anim_path(path_svg1, ico_svg1, 1);
+ 			  				sbros(1);
+
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+ 				g_svg2.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg2, ico_svg2, 2);
+ 			  			sbros(2);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+ 				 g_svg3.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg3, ico_svg3, 3);
+ 			  			sbros(3);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+ 				g_svg4.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg4, ico_svg4, 4);
+ 			  			sbros(4);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+ 				g_svg5.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg5, ico_svg5, 5);
+ 			  			sbros(5);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+
+ 				g_svg6.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg6, ico_svg6, 6);
+ 			  			sbros(6);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+
+
+ 				g_svg7.hover
+ 			  	(
+ 			  		function() 
+ 			  			{
+ 			  			anim_path(path_svg7, ico_svg7, 7);
+ 			  			sbros(7);
+ 			  			},
+ 					function() 
+ 						{
+
+ 						}
+ 				);
+ s1.append(f);
+  });
+
+	
+</script>
+	</div>
+<!--//Реализованные проекты-->
+
+<!--Новости-->
+<h2 class="ta_center">Новости компании</h2>
+<div class="news_main">
+	<ul>
+		<li>
+			<div class="item_img"><img src="images/news1.png" alt="" title=""></div>
+			<div class="line-details">
+                  <div class="line-date">
+                     <strong>1</strong><span>мар</span>
+                   </div>
+            </div>
+			<a href="#">Приглашаем на YugBuild-2016</a>
+			<p>Уважаемые клиенты и партнеры! С 1 по 4 марта, в ВКК "Экспоград Юг" (ул. Конгрессная, 1) проходит международная выставка строительных и отделочных материалов, инженерного оборудования.</p>
+		</li>
+
+		<li>
+			<div class="item_img"><img src="images/news2.png" alt="" title=""></div>
+				<div class="line-details">
+                  <div class="line-date">
+                     <strong>10</strong><span>фев</span>
+                   </div>
+            </div>
+			<a href="#">Надежность Дьюмарк подтверждена «Газпром»!</a>
+			<p>Уважаемые клиенты и партнеры! С 1 по 4 марта, в ВКК "Экспоград Юг" (ул. Конгрессная, 1) проходит международная выставка строительных и отделочных материалов, инженерного оборудования.</p>
+		</li>
+
+		<li>
+			<div class="item_img"><img src="images/news3.png" alt="" title=""></div>
+				<div class="line-details">
+                  <div class="line-date">
+                     <strong>5</strong><span>янв</span>
+                   </div>
+            </div>
+			<a href="#">Дьюмарк - выбор «Ренейссанс Констракшн»</a>
+			<p>Уважаемые клиенты и партнеры! С 1 по 4 марта, в ВКК "Экспоград Юг" (ул. Конгрессная, 1) проходит международная выставка строительных и отделочных материалов, инженерного оборудования.</p>
+		</li>
+	</ul>
+</div>
+<!--//Новости-->
+
+<!--Форма обратной связи-->
+<!--//Форма обратной связи-->
+
+
+
+
+
 	</div>
 	</main><!-- .content -->
 
