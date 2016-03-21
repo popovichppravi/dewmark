@@ -43,7 +43,7 @@ jQuery("input#maxCost").change(function(){
 });
 
 // фильтрация ввода в поля
-	jQuery('input').keypress(function(event){
+	jQuery('.formCost input').keypress(function(event){
 		var key, keyChar;
 		if(!event) var event = window.event;
 		

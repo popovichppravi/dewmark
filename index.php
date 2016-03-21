@@ -33,6 +33,27 @@
 			</div>
 
 			<div class="cell ta_right">
+<!--Выбор языка-->
+<div class="language">
+	<div id="lang_now"><img src="images/rus.png"><i class="fa fa-angle-down"></i></div>
+	<div class="lang_list">
+		<ul>
+			<li><img src="images/rus.png">Русский</li>
+			<li><img src="images/eng.png">English</li>
+			<li><img src="images/sp.png">Español</li>
+		</ul>		
+	</div>
+</div>
+
+		<script type="text/javascript">
+			$( "#lang_now" ).click(function() {
+				$( ".lang_list" ).toggle();
+				$("#lang_now i").toggleClass("fa-angle-down");
+				$("#lang_now i").toggleClass("fa-angle-up"); 
+});
+		</script>
+<!--Выбор языка-->
+
 		<!--Верхнее меню-->
 			<div class="top_menu">
 				<ul>
@@ -71,8 +92,7 @@
 			<img src="images/main.jpg">
 		</div>
 		<div class="right_div">
-<h2>О нас</h2>
-<p>Компания "Дьюмарк" - российская компания, работающая на рынке деформационных швов с 2007 года.  Наши инженеры проектируют и создают профили для деформационных швов для самых различных объектов на территории как России, так и всего мира.</p>
+<p class="ta_center">Компания "Дьюмарк" - российская компания, работающая на рынке деформационных швов с 2007 года.  Наши инженеры проектируют и создают профили для деформационных швов для самых различных объектов на территории как России, так и всего мира.</p>
 <hr />
 <div class="ta_center">
 <ul class="about_main">
@@ -85,8 +105,10 @@
 		</div>
 	</div>
 <!--//Информационный блок на главной странице-->
-
+	</div>
 <!--Услуги-->
+<div class="grey_bg">
+<div class="container">
 <h2 class="ta_center">Услуги компании</h2>
 <div class="usl_main">
 <ul>
@@ -137,8 +159,10 @@
 	<a href="#" class="btn">Подробнее<i class="fa fa-angle-right"></i></a>
 </div>	
 </div>
+	</div>
+	</div>
 <!--//Услуги-->
-
+<div class="container">
 <!--Поиск продукции-->
 <h2 class="ta_center"><i class="fa fa-search"></i>Поиск продукции</h2>
 <div class="search_filter ta_center">
@@ -315,8 +339,10 @@ $("#points_polygon").html(string);
 	</script>
 <!--//Поиск продукции-->
 
-
+	</div>
 <!--Реализованные проекты-->
+<div class="grey_bg">
+<div class="container">
 <h2 class="ta_center">Реализованные проекты</h2>
 <p class="ta_center">Дьюмарк постоянно разрабатывает новые системы профилей и консультирует заказчиков по выбору профильных систем, что позволяет нам постоянно совершенствоваться и предлагать ВАМ все более надежные решения в строительстве.</p>
 	<div class="compl_prj_main">
@@ -359,6 +385,7 @@ $("#points_polygon").html(string);
 
 			<a href="#" class="btn">Все проекты<i class="fa fa-angle-right"></i></a>
 		</div>
+
 <script type="text/javascript">
 var s1 = Snap.select("#compl_prj_main_svg");
 var bbox = 1;
@@ -526,9 +553,11 @@ Snap.load("svg/sv1.svg", function (f)
 
 	
 </script>
+</div>
 	</div>
+		</div>
 <!--//Реализованные проекты-->
-
+<div class="container">
 <!--Новости-->
 <h2 class="ta_center">Новости компании</h2>
 <div class="news_main">
@@ -569,21 +598,174 @@ Snap.load("svg/sv1.svg", function (f)
 </div>
 <!--//Новости-->
 
+</div>
+
 <!--Форма обратной связи-->
+<div class="form_main">
+	<div class="container">
+	<div class="table">
+		<div class="contacts_block">
+		<h3><i class="fa fa-globe"></i>Контакты</h3>	
+			<div class="countries">
+				<div id="country_now">
+					<span><img src="images/rus.png" alt="" title="" />Россия</span>
+					<i class="fa fa-caret-down"></i>
+				</div>	
+				<div class="countries_list">
+					 <ul>
+					 	<li><img src="images/uk.png" />Украина</li>
+					 	<li><img src="images/bl.png" />Беларусь</li>
+					 	<li><img src="images/kz.png" />Казахстан</li>
+					 </ul>
+				</div>
+			</div>
+
+			<div class="cities">
+				<div id="city_now">
+					<span>Краснодар</span><i class="fa fa-caret-down"></i>
+				</div>	
+				<div class="cities_list">
+					<ul>
+						<li>Москва</li>
+						<li>Санкт-Петербург</li>
+						<li>Другой город</li>
+					</ul>
+				</div>
+			</div>
+
+<div class="contacts_items">
+	<div class="contact_item">
+	<div class="icon map"><i class="fa fa-map-marker"></i></div>
+		<div class="contact_text"><p>115477, г. Москва,<br/>ул. Деловая, д.11, стр.8</p><p class="show_on_map"><a href="#">Посмотреть на карте</a></p></div>
+	</div>	
+
+	<div class="contact_item">
+		<div class="icon mobile"><i class="fa fa-mobile"></i></div>
+		<div class="contact_text"><p>8 (800) 100-97-53<br/>звонки по России бесплатно</p></div>
+	</div>	
+
+	<div class="contact_item">
+		<div class="icon mail"><i class="fa fa-envelope"></i></div>
+		<div class="contact_text"><p>info@dewmark.ru</p></div>
+	</div>	
+</div>
+			
+		</div>
+
+		<script type="text/javascript">
+			$( "#city_now" ).click(function() {
+				$( ".cities_list" ).toggle();
+				$("#city_now i").toggleClass("fa-caret-down");
+				$("#city_now i").toggleClass("fa-caret-up");
+
+				$( ".countries_list" ).hide();
+				$("#country_now i").addClass("fa-caret-down");
+				$("#country_now i").removeClass("fa-caret-up");
+  
+});
+
+		$( "#country_now" ).click(function() 
+			{
+				$( ".countries_list" ).toggle();
+				$("#country_now i").toggleClass("fa-caret-down");
+				$("#country_now i").toggleClass("fa-caret-up");
+					$( ".cities_list" ).hide();
+				$("#city_now i").addClass("fa-caret-down");
+				$("#city_now i").removeClass("fa-caret-up");
+			});
+		</script>
+
+		<div class="form_block">
+		<h3><i class="fa fa-paper-plane"></i>Форма обратной связи</h3>
+
+		<form method="post" id="feedback-valid" action="/bitrix/templates/medved_templ/sendmail.php">
+    <table id="feedback-form">
+    <tbody><tr>
+    <td style="padding-right: 30px;">
+    <div>
+      <label><i class="fa fa-user"></i></label>
+          <input name="feedback_name" type="text" placeholder="ФИО *" maxlength="255" value="">
+        </div>
+        </td>
+        <td>
+        <div>
+        <label><i class="fa fa-envelope-o"></i></label>
+          <input name="feedback_email" type="text" placeholder="E-mail *" maxlength="255" value="">
+        </div>
+        </td>
+        </tr>
+          <tr>
+    <td style="padding-right: 30px;">
+    <div>
+    <label><i class="fa fa-phone"></i></label>
+          <input name="feedback_tel" type="text" placeholder="83432161630" maxlength="255" value="">
+        </div>
+        </td>
+        <td>
+        <div>
+        <label><i class="fa fa-building-o"></i></label>
+          <input name="feedback_city" type="text" placeholder="Организация" maxlength="255" value="">
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <div>
+        <label><i class="fa fa-comment-o"></i></label>
+          <textarea name="feedback_text" rows="3" placeholder="Текст сообщения *"></textarea>
+        </div>
+        </td>
+        </tr>
+        </tbody></table>
+        <div class="lastname">
+</div>
+<div class="ta_right">
+	<button class="btn">Отправить<i class="fa fa-paper-plane-o"></i></button>
+	</div>
+    </form>		
+		</div>
+	</div>
+	</div>
+</div>
 <!--//Форма обратной связи-->
 
 
 
 
 
-	</div>
+	
 	</main><!-- .content -->
 
 </div><!-- .wrapper -->
 
 <footer class="footer">
 <div class="container">
-	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+<div class="table">
+	<div class="cell">
+		<div class="menu_bottom">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>	
+		</div>
+		<div class="copyright">© ООО «Дьюмарк», 2016</div>
+	</div>
+	<div class="cell">
+		<div class="social">
+			<ul>
+			<li>Поделиться:</li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-vk"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 	</div>
 </footer><!-- .footer -->
 
