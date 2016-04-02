@@ -223,6 +223,188 @@
 
 <div class="page">
 	<div class="container">
+<div class="detail_profile">
+	<div class="top_info">
+		<div class="left_div standart_bg txt_profile">
+		<p>Накладной профиль с гибкой вставкой</p>
+		<h2>SV 22/30/N</h2>
+			<ul>
+<li>Для стен и полов</li>
+<li>Простота монтажа</li>
+<li>Привлекательный внешний вид</li>
+<li>Широкий выбор цветов вставки</li>
+<li>Ширина швов 30 мм</li>
+</ul>
+<div class="docs_btns">
+	<a href="#"><img src="images/pdf_ico.png"></a>
+	<a href="#"><img src="images/dwg_ico.png"></a>
+</div>
+		</div>
+		<div class="right_div"><a data-lightbox="roadtrip" href="images/profile/22-30_prew.png"><img src="images/profile/22-30_prew.png"></a>
+		</div>
+	</div>
+
+<!--TABS-->
+	<ul id="tabs" class="table"> 
+	  <li class="cell active">Технические данные</li>
+	  <li class="cell">Характеристики</li>
+	  <li class="cell">Чертежи</li>
+	</ul>
+
+	<ul id="tab">
+		<li class="active">
+<table class="profile_table">
+<tbody>
+<tr>
+<td width="110" rowspan="2" bgcolor="#FFF5CC"><strong>Профиль</strong></td>
+<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Ширина шва,<br>
+            <strong>F (мм)</strong></p>
+</td>
+<td width="10%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Монтажная<br>
+            высота,<br>
+            <strong>H (мм)</strong></p>
+</td>
+<td width="13%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Видимая ширина<br>
+            профиля,<br>
+            <strong>S (мм)</strong></p>
+</td>
+<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Общая ширина<br>
+            профиля,<br>
+            <strong>Sm (мм)</strong></p>
+</td>
+<td width="12%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Горизонтальные<br>
+            деформации,<br>
+            <strong>ΔF (мм)</strong></p>
+</td>
+<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<p align="center">Вертикальные<br>
+            деформации,<br>
+            <strong>ΔFh (мм)</strong></p>
+</td>
+<td height="37" colspan="4" bgcolor="#FFF5CC">
+<p align="center">Допустимые нагрузки, <strong>кН</strong></p>
+</td>
+</tr>
+<tr style="border-bottom: 1px solid;">
+<td bgcolor="#FFF5CC">
+<p align="center"><img src="images/car_bl.png" height="10"></p>
+</td>
+<td bgcolor="#FFF5CC">
+<p align="center"><img src="images/man_bl.png" height="20"></p>
+</td>
+<td bgcolor="#FFF5CC">
+<p align="center"><img src="images/pogruz_bl.png" height="20"></p>
+</td>
+<td bgcolor="#FFF5CC">
+<p align="center"><img src="images/rokla_bl.png" height="20"></p>
+</td>
+</tr>
+<tr style="border-bottom: 1px solid;">
+<td bgcolor="#FFFDF3">
+<p align="left">SV 22/30/N</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">30</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">28</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">170</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">170</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">10 (+5/-5)</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">6 (+3/-3)</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">30*</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">70*</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">50*</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">—</p>
+</td>
+</tr>
+<tr style="border-bottom: 1px solid;">
+<td colspan="11" bgcolor="#FFF5CC"><strong>Угловые версии</strong></td>
+</tr>
+<tr style="border-bottom: 1px solid;">
+<td bgcolor="#FFFDF3">
+<p align="left">SV-E 22/30/N</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">30</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">28</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">102</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">102</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">10 (+5/-5)</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">6 (+3/-3)</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">10*</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">50*</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">—</p>
+</td>
+<td bgcolor="#FFFDF3">
+<p align="center">—</p>
+</td>
+</tr>
+<tr>
+<td colspan="11" bgcolor="#FFF5CC">
+<p align="left">* Не для постоянного использования</p>
+</td>
+</tr>
+</tbody>
+</table>	
+	<div class="main_ch"><img src="images/profile/main_ch.png"></div>		
+		</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<script type="text/javascript">
+		/**********tabs***********/
+$("ul#tabs li").click(function() {
+        if (!$(this).hasClass("active")) {
+            var tabNum = $(this).index();
+            var nthChild = tabNum+1;
+            $("ul#tabs li.active").removeClass("active");
+            $(this).addClass("active");
+            $("ul#tab li.active").removeClass("active");
+            $("ul#tab li:nth-child("+nthChild+")").addClass("active");
+        }
+    });
+/**********(tabs)***********/
+	</script>
+<!--//TABS-->
+</div>
 
 
 	</div>

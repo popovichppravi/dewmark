@@ -58,3 +58,4 @@ jQuery("input#maxCost").change(function(){
 	});
 });
 /*********(trackbar в фильтре)*********/
+

@@ -408,6 +408,61 @@ display: none;
 	margin: 0;
 }
 
+.standart_bg
+{
+	background: #F4DD1A;
+}
+
+/*tabs*/
+ul#tabs {
+    list-style-type: none;
+    padding: 0;
+      text-align: left;
+  margin: 0 0 25px 0;
+  width: auto;
+}
+ul#tabs li {
+    padding: 7px 20px;
+    margin-bottom: 4px;
+    color: #202639;
+    background-color: #FFF;
+    border: 1px solid #202639;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 180px;
+  text-align: center;
+  vertical-align: middle;
+}
+ul#tabs li:hover {
+    background-color: #25B8D7;
+    border: 1px solid #25B8D7;
+    color:#fff;
+}
+ul#tabs li.active {
+    background-color: #25B8D7;
+    border: 1px solid #25B8D7;
+    color:#fff;
+}
+ul#tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#tab li {
+    display: none;
+      padding-left: 5px;
+}
+ul#tab li.active {
+    display: list-item;
+}
+
+ul#tab li li
+{
+  display: list-item;
+}
+
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
@@ -416,6 +471,92 @@ display: none;
 	    width: 100%;
     min-width: 1000px;
 }
+
+.profile_table
+{
+	font-size: 12px;
+	width: 100%;
+}
+
+.main_ch
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.profile_table td
+{
+	vertical-align: middle;
+}
+
+.detail_profile .top_info
+{
+	    display: flex;
+	    display: -webkit-flex;
+	    width: 100%;
+	    overflow: hidden;
+	    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+        margin: 0 auto;
+        position: relative;
+            padding: 0 0 35px 0;
+}
+
+.detail_profile .top_info .right_div
+{
+width: 490px;
+float: left;
+height: 310px;
+}
+
+.detail_profile .txt_profile ul
+{
+list-style-type: none;
+margin: 0 0 30px 30px;
+padding: 0;
+}
+.detail_profile .txt_profile ul li
+{
+	margin-bottom: 5px;
+}
+
+.detail_profile .txt_profile ul li::before
+{
+	content: "\f046";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.detail_profile .top_info .right_div img
+{
+	border: 5px solid #F4DD1A;
+}
+
+.detail_profile .top_info .left_div
+{
+float: right;
+height: 250px;
+width: 430px;
+padding: 30px;
+}
+
+.detail_profile .docs_btns img
+{
+height: 40px;
+}
+
+.detail_profile .docs_btns a
+{
+	margin-right: 10px;
+}
+
 .products_div
 {
 	margin-top: -300px
