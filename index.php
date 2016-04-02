@@ -10,14 +10,118 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" type="text/css" href="css/diapazon.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<link media="all" href="css/styles_dinamic.css" type="text/css" rel="stylesheet">
+
+	<!--lightbox-->
+	<link href="css/lightbox.css" rel="stylesheet" />
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+	<!--//lightbox-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="js/reveal.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
 	<script type="text/javascript" src="js/snap.svg.js"></script>
+
 <script type="text/javascript" src="js/main.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
+	<!-- // Продукция (popup) -->
+<div id="myModal" class="reveal-modal">
+<div class="pop_box">
+    <a title="закрыть" class="close-reveal-modal cloze_window"></a>
+
+<div class="pop_box_inn">
+<table class="prf_menu">
+	<tr>
+		<td><img src="images/standart_ico.png"><span>Standart</span></td>
+		<td><img src="images/heavy_ico.png"><span>Heavy</span></td>
+		<td><img src="images/hydro_ico.png"><span>Hydro</span></td>
+		<td><img src="images/metall_ico.png"><span>Metall</span></td>
+	</tr>
+	<tr>
+		<td>
+<ul class="standart_menu">
+	<li><a href="#">AV 13/…</a></li>
+	<li><a href="#">AV 14/…</a></li>
+	<li><a href="#">AV 15/…</a></li>
+	<li><a href="#">AV 16/…</a></li>
+	<li><a href="#">AV 18/…</a></li>
+	<li><a href="#">SV 21/20/…</a></li>
+	<li><a href="#">SV 21/30/…</a></li>
+	<li><a href="#">SV 21/50/…</a></li>
+	<li><a href="#">SV 22/24/N</a></li>
+	<li><a href="#">SV 22/30/N</a></li>
+	<li><a href="#">SV 22/50/N</a></li>
+	<li><a href="#">SV 23/50/…</a></li>
+	<li><a href="#">SV 24/50/N</a></li>
+	<li><a href="#">SV 27/…/50</a></li>
+	<li><a href="#">SG 34/60</a></li>
+	<li><a href="#">FV 63/20/15</a></li>
+	<li><a href="#">CR 30/8</a></li>
+	<li><a href="#">Компоновка</a></li>
+	<li><a href="#">Пересечения</a></li>
+</ul>
+		</td> 
+		<td>
+<ul class="heavy_menu">
+	<li><a href="#">SG 31/35/…</a></li>
+	<li><a href="#">SG 31/50/…</a></li>
+	<li><a href="#">SG 32/40/N</a></li>
+	<li><a href="#">SG 32/55/N</a></li>
+	<li><a href="#">SV 41/50/…</a></li>
+	<li><a href="#">SV 41/85/…</a></li>
+	<li><a href="#">SV 41/105/…</a></li>
+	<li><a href="#">SV 41/150/…</a></li>
+	<li><a href="#">SV 41/190/…</a></li>
+	<li><a href="#">SV 42/65/N</a></li>
+	<li><a href="#">SV 42/100/N</a></li>
+	<li><a href="#">SV 42/120/N</a></li>
+	<li><a href="#">SV 43/…</a></li>
+	<li><a href="#">SV 45/135/…</a></li>
+	<li><a href="#">SV 45/160/…</a></li>
+	<li><a href="#">SV 45/300/…</a></li>
+	<li><a href="#">SV 46/155/N</a></li>
+	<li><a href="#">SV 46/180/N</a></li>
+	<li><a href="#">SV 46/320/N</a></li>
+	<li><a href="#">SV 47/210/…</a></li>
+	<li><a href="#">SV 47/280…/…</a></li>
+	<li><a href="#">SV 48/230/…</a></li>
+	<li><a href="#">SV 48/300…/…</a></li>
+	<li><a href="#">SV 86/50/20</a></li>
+	<li><a href="#">Компоновка</a></li>
+	<li><a href="#">Пересечения</a></li>
+</ul>
+		</td>
+		<td>
+<ul class="hydro_menu">
+	<li><a href="#">WR 71/70/…</a></li>
+	<li><a href="#">WR 75/70/…</a></li>
+	<li><a href="#">WR 76/…</a></li>
+	<li><a href="#">Пересечения</a></li>
+</ul>
+		</td>
+		<td>
+<ul class="metall_menu">
+	<li><a href="#">SG 61</a></li>
+	<li><a href="#">SG 62 “SINUS”</a></li>
+	<li><a href="#">SG 81/…</a></li>
+	<li><a href="#">SG 82/…</a></li>
+	<li><a href="#">SG 83/…</a></li>
+	<li><a href="#">SG 84/…</a></li>
+	<li><a href="#">Пересечения</a></li>
+</ul>
+		</td>
+	</tr>
+</table>
+
+
+
+</div>
+</div>
+</div>
+<!-- Продукция (popup) // -->
 
 <div class="wrapper">
 
@@ -57,7 +161,7 @@
 		<!--Верхнее меню-->
 			<div class="top_menu">
 				<ul>
-					<li><i class="fa fa-expand"></i><a href="#">Продукция</a></li>
+					<li><a href="#" data-reveal-id="myModal"><i class="fa fa-expand"></i></a><a href="#">Продукция</a></li>
 					<li>
 						<a href="#">Компания</a>
 						<ul class="child">
@@ -71,6 +175,10 @@
 				</ul>
 			</div>
 		<!--//Верхнее меню-->
+
+
+
+
 			</div>
 		</div>
 	</div>
@@ -78,10 +186,11 @@
 	</div>
 
 	<main class="content">
+
 	<div class="blue_div">
 		<div class="container">
-		<h1>Системы деформационных швов</h1>
-		<p>Профили для деформационных швов являются важным элементом здания. Они должны не только обеспечивать  надежность эксплуатации, компенсируя деформации и нагрузки, возникающие в здании, но, и, являясь частью  интерьера, должны иметь привлекательный дизайн.  Номенклатура компании "Дьюмарк" позволяет подобрать  профили по всем параметрам, заявленным архитекторами и проектировщиками.</p>
+		<h1 class="ta_center">Системы деформационных швов</h1>
+		<p class="ta_center">Профили для деформационных швов являются важным элементом здания. Они должны не только обеспечивать  надежность эксплуатации, компенсируя деформации и нагрузки, возникающие в здании, но, и, являясь частью  интерьера, должны иметь привлекательный дизайн.  Номенклатура компании "Дьюмарк" позволяет подобрать  профили по всем параметрам, заявленным архитекторами и проектировщиками.</p>
 		</div>
 	</div>
 	<div class="container">
@@ -600,6 +709,17 @@ Snap.load("svg/sv1.svg", function (f)
 
 </div>
 
+
+
+
+
+
+
+	
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
 <!--Форма обратной связи-->
 <div class="form_main">
 	<div class="container">
@@ -728,15 +848,6 @@ Snap.load("svg/sv1.svg", function (f)
 	</div>
 </div>
 <!--//Форма обратной связи-->
-
-
-
-
-
-	
-	</main><!-- .content -->
-
-</div><!-- .wrapper -->
 
 <footer class="footer">
 <div class="container">
