@@ -431,9 +431,16 @@ ul#tabs li {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     cursor: pointer;
-    width: 180px;
+    width: 200px;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
+}
+ul#tabs li i
+{
+	margin-left: 10px;
+	font-size: 16px;
+	vertical-align: middle;
 }
 ul#tabs li:hover {
     background-color: #25B8D7;
@@ -472,6 +479,46 @@ ul#tab li li
     min-width: 1000px;
 }
 
+.chrcs_profile ul
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.chrcs_profile ul li
+{
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+.chrcs_profile ul li img
+{
+	width: 80px;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.chrcs_profile ul li div.txt_info
+{
+display: inline-block;
+vertical-align: middle;
+width: 800px;	
+}
+.chertegi
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0; 
+}
+
+.chertegi li
+{
+	margin-bottom: 30px;
+	/*border-bottom: 1px dashed #25B8D7; */ 
+}
+
+
 .profile_table
 {
 	font-size: 12px;
@@ -484,9 +531,33 @@ ul#tab li li
 	margin-top: 30px;
 }
 
+.profile_table tr:nth-child(1) td,
+.profile_table tr:nth-child(2) td
+{
+	padding: 0;
+	 background: #f0f0f0;
+
+}
+
+.profile_table tr td:nth-child(1)
+{
+	padding-left: 10px;
+}
+
+  .profile_table tr:nth-child(2n) {
+    background: #f0f0f0;
+   } 
+
+
 .profile_table td
 {
 	vertical-align: middle;
+	padding: 5px 0;
+}
+
+.profile_table td p
+{
+	margin: 0;
 }
 
 .detail_profile .top_info

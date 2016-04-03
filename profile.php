@@ -246,9 +246,9 @@
 
 <!--TABS-->
 	<ul id="tabs" class="table"> 
-	  <li class="cell active">Технические данные</li>
-	  <li class="cell">Характеристики</li>
-	  <li class="cell">Чертежи</li>
+	  <li class="cell active">Технические данные<i class="fa fa-cogs"></i></li>
+	  <li class="cell">Характеристики<i class="fa fa-bar-chart"></i></li>
+	  <li class="cell">Чертежи<i class="fa fa-book"></i></li>
 	</ul>
 
 	<ul id="tab">
@@ -256,129 +256,129 @@
 <table class="profile_table">
 <tbody>
 <tr>
-<td width="110" rowspan="2" bgcolor="#FFF5CC"><strong>Профиль</strong></td>
-<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<td width="110" rowspan="2" ><strong>Профиль</strong></td>
+<td width="11%" rowspan="2" >
 <p align="center">Ширина шва,<br>
             <strong>F (мм)</strong></p>
 </td>
-<td width="10%" rowspan="2" bgcolor="#FFF5CC">
+<td width="10%" rowspan="2" >
 <p align="center">Монтажная<br>
             высота,<br>
             <strong>H (мм)</strong></p>
 </td>
-<td width="13%" rowspan="2" bgcolor="#FFF5CC">
+<td width="13%" rowspan="2" >
 <p align="center">Видимая ширина<br>
             профиля,<br>
             <strong>S (мм)</strong></p>
 </td>
-<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<td width="11%" rowspan="2" >
 <p align="center">Общая ширина<br>
             профиля,<br>
             <strong>Sm (мм)</strong></p>
 </td>
-<td width="12%" rowspan="2" bgcolor="#FFF5CC">
+<td width="12%" rowspan="2" >
 <p align="center">Горизонтальные<br>
             деформации,<br>
             <strong>ΔF (мм)</strong></p>
 </td>
-<td width="11%" rowspan="2" bgcolor="#FFF5CC">
+<td width="11%" rowspan="2" >
 <p align="center">Вертикальные<br>
             деформации,<br>
             <strong>ΔFh (мм)</strong></p>
 </td>
-<td height="37" colspan="4" bgcolor="#FFF5CC">
+<td height="37" colspan="4" >
 <p align="center">Допустимые нагрузки, <strong>кН</strong></p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid;">
-<td bgcolor="#FFF5CC">
+<td >
 <p align="center"><img src="images/car_bl.png" height="10"></p>
 </td>
-<td bgcolor="#FFF5CC">
+<td >
 <p align="center"><img src="images/man_bl.png" height="20"></p>
 </td>
-<td bgcolor="#FFF5CC">
+<td >
 <p align="center"><img src="images/pogruz_bl.png" height="20"></p>
 </td>
-<td bgcolor="#FFF5CC">
+<td >
 <p align="center"><img src="images/rokla_bl.png" height="20"></p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid;">
-<td bgcolor="#FFFDF3">
+<td >
 <p align="left">SV 22/30/N</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">30</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">28</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">170</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">170</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">10 (+5/-5)</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">6 (+3/-3)</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">30*</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">70*</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">50*</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">—</p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid;">
-<td colspan="11" bgcolor="#FFF5CC"><strong>Угловые версии</strong></td>
+<td colspan="11" ><strong>Угловые версии</strong></td>
 </tr>
 <tr style="border-bottom: 1px solid;">
-<td bgcolor="#FFFDF3">
+<td >
 <p align="left">SV-E 22/30/N</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">30</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">28</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">102</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">102</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">10 (+5/-5)</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">6 (+3/-3)</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">10*</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">50*</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">—</p>
 </td>
-<td bgcolor="#FFFDF3">
+<td >
 <p align="center">—</p>
 </td>
 </tr>
 <tr>
-<td colspan="11" bgcolor="#FFF5CC">
+<td colspan="11" >
 <p align="left">* Не для постоянного использования</p>
 </td>
 </tr>
@@ -386,8 +386,28 @@
 </table>	
 	<div class="main_ch"><img src="images/profile/main_ch.png"></div>		
 		</li>
-		<li>2</li>
-		<li>3</li>
+		<li>
+			<div class="chrcs_profile">
+				<ul>
+					<li><img src="images/profile/det_ico1.png"><div class="txt_info"><b>Материал:</b> <span>Алюминий 6060, пластифицированный ПВХ (ультрафиолето-, озоностойкий; диапазон рабочих температур:-30°C…120°C)</span></div></li>
+					<li><img src="images/profile/det_ico2.png"><div class="txt_info"><b>Цвет:</b> <span>Черный, серый (7035), бежевый (1015)</span></div></li>
+					<li><img src="images/profile/det_ico3.png"><div class="txt_info"><b>Стандартная длина:</b> <span>алюминий — 3 метра, вставка — 50 метров</span></div></li>
+					<li><img src="images/profile/det_ico4.png"><div class="txt_info"><b>На заказ:</b> <span>Любой цвет вставки по каталогу RAL</span></div></li>
+					<li><img src="images/profile/det_ico5.png"><div class="txt_info"><b>Монтаж:</b> <span>Неровности поверхности, на которую фиксируется профиль, должны быть устранены с помощью выравнивающего раствора MAPEGROUT или аналогичного. Алюминиевые направляющие должны быть установлены на обеих сторонах шва и закреплены с помощью анкеров, исходя из рекомендаций по выбору крепежа. Для облегчения монтажа вставки использовать смазку WD-40 (или аналог).</span></div></li>
+					<li><img src="images/profile/det_ico6.png"><div class="txt_info"><b>Дополнительно:</b> <span>Профиль может комплектоваться гладкой вставкой (индекс F*) с пониженными характеристиками деформаций для зон с повышенными требованиями к гигиенте.</span></div></li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<ul class="chertegi">
+				<li><h2>AV 14/70 W</h2><img src="images/profile/av14ch2.jpg"></li>
+				<li><h2>AV 14/70 F</h2><img src="images/profile/av14ch3.jpg"></li>
+				<li><h2>AV 14/150</h2><img src="images/profile/av14ch4.jpg"></li>
+				<li><h2>AV 14/200</h2><img src="images/profile/av14ch5.jpg"></li>
+				<li><h2>AV-E 14/70</h2><img src="images/profile/av14ch6.jpg"></li>
+			</ul>
+
+		</li>
 	</ul>
 	<script type="text/javascript">
 		/**********tabs***********/
