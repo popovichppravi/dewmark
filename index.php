@@ -289,7 +289,118 @@
 		
 		<input type="checkbox" name="typetr" value="rokla" id="typetrv4" ><label for="typetrv4" >Рокла<img class="img_position" src="images/rokla_bl.png" alt="Рокла" title="Рокла"></label>
 </div>
-<div id="change_left">Увеличить</div>
+<div class="nagruzka_arr">
+<i class="fa fa-long-arrow-down" id="arr1"></i>
+<i class="fa fa-long-arrow-down" id="arr2"></i>
+<i class="fa fa-long-arrow-down" id="arr3"></i>
+<i class="fa fa-long-arrow-down" id="arr4"></i>
+<i class="fa fa-long-arrow-down" id="arr5"></i>
+<i class="fa fa-long-arrow-down" id="arr6"></i>	
+<i class="fa fa-long-arrow-down" id="arr7"></i>	
+<i class="fa fa-long-arrow-down" id="arr8"></i>		
+</div>
+<script type="text/javascript">
+$( "input[name='typetr']" ).change(function() {
+if ($("#typetrv1").is(":checked")) 
+			{ 
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+			};
+
+if (!$("#typetrv1").is(":checked") && !$("#typetrv2").is(":checked") && !$("#typetrv3").is(":checked") && !$("#typetrv4").is(":checked")) 
+			{ 
+$("#arr4").hide();
+$("#arr5").hide();
+			}
+
+			if (!$("#typetrv1").is(":checked") && !$("#typetrv2").is(":checked") && !$("#typetrv3").is(":checked") && !$("#typetrv4").is(":checked")) 
+			{ 
+$("#arr1").hide();
+$("#arr2").hide();
+$("#arr3").hide();
+$("#arr4").hide();
+$("#arr5").hide();
+$("#arr6").hide();
+$("#arr7").hide();
+$("#arr8").hide();
+			}
+
+if ($("#typetrv1").is(":checked") && !$("#typetrv2").is(":checked") && !$("#typetrv3").is(":checked") && !$("#typetrv4").is(":checked")) 
+			{ 
+$("#arr1").hide();
+$("#arr2").hide();
+$("#arr3").hide();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").hide();
+$("#arr7").hide();
+$("#arr8").hide();
+			}
+
+if ($("#typetrv3").is(":checked") && !$("#typetrv4").is(":checked")) 
+			{ 
+$("#arr1").hide();
+$("#arr2").fadeIn();
+$("#arr3").fadeIn();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").fadeIn();
+$("#arr7").fadeIn();
+$("#arr8").hide();
+			}
+
+
+
+
+	if ($("#typetrv2").is(":checked") && !$("#typetrv3").is(":checked") && !$("#typetrv4").is(":checked")) 
+			{ 
+$("#arr1").hide();
+$("#arr2").hide();
+$("#arr3").fadeIn();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").fadeIn();
+$("#arr7").hide();
+$("#arr8").hide();
+			}
+
+
+
+if ($("#typetrv2").is(":checked")) 
+			{ 
+$("#arr3").fadeIn();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").fadeIn();
+			}
+
+if ($("#typetrv3").is(":checked")) 
+			{ 
+$("#arr2").fadeIn();
+$("#arr3").fadeIn();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").fadeIn();
+$("#arr7").fadeIn();
+
+			}
+
+if ($("#typetrv4").is(":checked")) 
+			{ 
+$("#arr1").fadeIn();
+$("#arr2").fadeIn();
+$("#arr3").fadeIn();
+$("#arr4").fadeIn();
+$("#arr5").fadeIn();
+$("#arr6").fadeIn();
+$("#arr7").fadeIn();
+$("#arr8").fadeIn();
+
+			}
+	});
+
+</script>
+
 <svg id="filter_profile" ></svg>
 <div class="table inputs_search">
 	<div class="cell">
@@ -298,7 +409,7 @@
 				<h3>Ширина шва</h3>
 				<p>Если ширина шва отличается по длине то указываете наибольшую величину</p>
 				<div class="formCost">
-					<input type="text" id="minCost" value="0" placeholder="от" /><span>&mdash;</span><input type="text" id="maxCost" placeholder="до" value="1000"/>
+					<input type="text" id="minCost" placeholder="от" /><span>&mdash;</span><input type="text" id="maxCost" placeholder="до" />
 				</div>
 				<div class="trackbarCont">
 					<div id="trackbar"></div>
@@ -378,41 +489,76 @@ if (raz[raz.length]==",") {raz=raz.substring(0, raz.length - 1);}
 	
 	<div id="points_polygon" style="display: none;"></div>
 	<script type="text/javascript">
-$("#change_left").click(
-function ()
+function width_up(n)
 {
 points1=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
-move_points('#LWPOLYLINE polygon', points1, -1);
+move_points('#LWPOLYLINE polygon', points1, -n);
 points2=[0,6,8];
-move_points('#HATCH_8_ polygon', points2, -1);
+move_points('#HATCH_8_ polygon', points2, -n);
 points3=[2,4];
-move_points('#HATCH polygon', points3, -1);
-width1=$("#rect2").attr("width")-1;
-width2=$("#rect3").attr("width")-1;
+move_points('#HATCH polygon', points3, -n);
+width1=$("#rect2").attr("width")-n;
+width2=$("#rect3").attr("width")-n;
 $("#rect2").attr("width", width1);
 $("#rect3").attr("width", width2);
 /*правая сторона*/
 points4=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
-move_points('#LWPOLYLINE_5_ polygon', points4, 1);
+move_points('#LWPOLYLINE_5_ polygon', points4, n);
 points5=[2,4];
-move_points('#HATCH_9_ polygon', points5, 1);
+move_points('#HATCH_9_ polygon', points5, n);
 points6=[2,4];
-move_points('#HATCH_4_ polygon', points6, 1);
-width3=$("#rect1").attr("width")-1;
-width4=$("#rect4").attr("width")-1;
+move_points('#HATCH_4_ polygon', points6, n);
+width3=$("#rect1").attr("width")-n;
+width4=$("#rect4").attr("width")-n;
 $("#rect1").attr("width", width3);
 $("#rect4").attr("width", width4);
-x3=parseFloat($("#rect1").attr("x"))+1;
-x4=parseFloat($("#rect4").attr("x"))+1;
+x3=parseFloat($("#rect1").attr("x"))+n;
+x4=parseFloat($("#rect4").attr("x"))+n;
 $("#rect1").attr("x", x3);
 $("#rect4").attr("x", x4);
 /*центральная часть*/
 points7=[48,46,44,42,40,38,36,34,32,30,28,26,24,22,20,18,16,14,12,10];
-move_points('#HATCH_3_ polygon', points7, 1);
+move_points('#HATCH_3_ polygon', points7, n);
 points8=[80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118];
-move_points('#HATCH_3_ polygon', points8, -1);
+move_points('#HATCH_3_ polygon', points8, -n);
 }
-);
+
+function width_down(n)
+{
+points1=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
+move_points('#LWPOLYLINE polygon', points1, +n);
+points2=[0,6,8];
+move_points('#HATCH_8_ polygon', points2, +n);
+points3=[2,4];
+move_points('#HATCH polygon', points3, +n);
+width1=parseFloat($("#rect2").attr("width"))+n;
+width2=parseFloat($("#rect3").attr("width"))+n;
+$("#rect2").attr("width", width1);
+$("#rect3").attr("width", width2);
+/*правая сторона*/
+points4=[0,2,4,6,8,10,16,18,20,22,24,26,28,30,32,34,36,38,40];
+move_points('#LWPOLYLINE_5_ polygon', points4, -n);
+points5=[2,4];
+move_points('#HATCH_9_ polygon', points5, -n);
+points6=[2,4];
+move_points('#HATCH_4_ polygon', points6, -n);
+/*-----------блоки2---------------*/
+width3=parseFloat($("#rect1").attr("width"))+n;
+width4=parseFloat($("#rect4").attr("width"))+n;
+$("#rect1").attr("width", width3);
+$("#rect4").attr("width", width4);
+x3=parseFloat($("#rect1").attr("x"))-n;
+x4=parseFloat($("#rect4").attr("x"))-n;
+$("#rect1").attr("x", x3);
+$("#rect4").attr("x", x4);
+/*-----------//блоки2-------------*/
+/*центральная часть*/
+points7=[48,46,44,42,40,38,36,34,32,30,28,26,24,22,20,18,16,14,12,10];
+move_points('#HATCH_3_ polygon', points7, -n);
+points8=[80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118];
+move_points('#HATCH_3_ polygon', points8, +n);
+}
+
 function move_points(id, points, val)
 {
 points_string=$(id).attr("points");
@@ -445,6 +591,7 @@ if (raz[raz.length-1]==",") {raz=raz.substring(0, raz.length - 1);}
   document.querySelector(id).setAttribute('points', raz);
 $("#points_polygon").html(string);
 }
+
 	</script>
 <!--//Поиск продукции-->
 

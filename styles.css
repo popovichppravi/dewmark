@@ -478,6 +478,18 @@ ul#tab li li
 	    width: 100%;
     min-width: 1000px;
 }
+.nagruzka_arr
+{
+	margin: 5px 0;
+	height: 20px;
+}
+.nagruzka_arr i
+{
+color: #202639;
+font-size: 20px;
+margin: 0 20px;
+display: none;
+}
 
 .chrcs_profile ul
 {
