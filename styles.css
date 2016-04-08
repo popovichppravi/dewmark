@@ -413,6 +413,9 @@ display: none;
 	background: #F4DD1A;
 }
 
+
+
+
 /*tabs*/
 ul#tabs {
     list-style-type: none;
@@ -441,6 +444,16 @@ ul#tabs li i
 	margin-left: 10px;
 	font-size: 16px;
 	vertical-align: middle;
+}
+ul#tabs li img
+{
+	width: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+ul#tabs li span
+{
+vertical-align: middle;
 }
 ul#tabs li:hover {
     background-color: #25B8D7;
@@ -478,6 +491,61 @@ ul#tab li li
 	    width: 100%;
     min-width: 1000px;
 }
+/*контакты*/
+.contact_text_div ul
+{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.contact_text_div ul li p
+{
+font-size: 20px;
+}
+
+.contact_text_div ul li
+{
+	margin-bottom: 20px;
+}
+
+.contact_text_div ul li i
+{
+	font-size: 30px;
+	vertical-align: top;
+	width: 30px;
+	text-align: center;
+	margin-right: 15px;
+	color: #25B8D7;
+}
+
+.contact_text_div ul li div.txt_cont
+{
+	display: inline-block;
+	vertical-align: top;
+}
+.contact_city
+{
+	display: table;
+	width: 100%;
+	margin: 30px 0;
+}
+.contact_map ymaps
+{
+margin-left: auto;
+}
+.contact_text_div
+{
+	display: table-cell;
+	vertical-align: top;
+}
+.contact_map
+{
+	display: table-cell;
+	vertical-align: top;
+	text-align: right;
+}
+
 .nagruzka_arr
 {
 	margin: 5px 0;

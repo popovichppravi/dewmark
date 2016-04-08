@@ -222,21 +222,108 @@
 
 <!--TABS-->
 	<ul id="tabs" class="table"> 
-	  <li class="cell active">Россия</li>
-	  <li class="cell">Украина</li>
-	  <li class="cell">Казахстан</li>
-	  <li class="cell">Беларусь</li>
-	  <li class="cell">ОАЭ</li>
+		<li class="cell active"><span>Россия</span><img src="images/flags24/rus.png"></li>
+		<li class="cell"><span>Украина</span><img src="images/flags24/uk.png"></li>
+		<li class="cell"><span>Казахстан</span><img src="images/flags24/kz.png"></li>
+		<li class="cell"><span>Беларусь</span><img src="images/flags24/bl.png"></li>
+		<li class="cell"><span>ОАЭ</span><img src="images/flags24/uae.png"></li>
 	</ul>
 
 	<ul id="tab">
 		<li class="active">
-
+	<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Москва<br /> 115477, ул. Деловая, д.11, стр.8</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+7 (800)100-97-53<br/>(бесплатный по России)</p><p>+7 (495)661-35-63</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>info@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=P5CfP3dn5bieOvZMYYQcCB6jXKXNGhKX&width=500&height=300&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
+	<hr />
+	<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Санкт-Петербург<br /> 193319, ул. Ворошилова д.2,<br /> ДЦ «ОХТА», оф. 801</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+7 (800)100-97-53<br/>(бесплатный по России)</p><p>+7 (812)309-26-45</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>spb@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LHB8DhqimMmg-aLVUaxaT3-_kqIUpOuw&width=500&height=300&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
 		</li>
 		<li>
+		<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Киев<br /> 01133, ул. Михаила Заднепровского,<br />дом 13, оф. 206-208</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+38 050 313 96 96</p><p>+38 067 395 70 49</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>ua@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7HEpsTKfFaJpd5XVQT_-fsT2x8ODXUKY&width=500&height=300&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
 			
 		</li>
 		<li>
+			<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Астана</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+7 (717) 272-74-57</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>ua@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LrpsbttHbIJdpKogH5s7PrYd1-cCxRl_&width=500&height=300&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
+			
+			
+		</li>
+
+			<li>
+		<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Минск<br /> 220116, пр-т Дзержинского,<br />д 131, пом. 648</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+37517-3723574</p><p>+37517-3723576</p><p>+37517-3723578</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>bel@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=poEfalUy9k4gzkrjFov01r2ZRThE_D01&width=500&height=400&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
+			
+		</li>
+
+			<li>
+		<div class="contact_city">
+		<div class="contact_text_div">
+		<ul>
+			<li><i class="fa fa-map-marker"></i><div class="txt_cont"><p>г. Дубай<br /> Jumeirah Lake Towers, X1</p></div></li>
+			<li><i class="fa fa-phone"></i><div class="txt_cont"><p>+971 (50)960 52 68</p></div></li>
+			<li><i class="fa fa-paper-plane" style="font-size: 25px;"></i><div class="txt_cont"><p>info.uae@dewmark.ru</p></div></li>
+		</ul>
+			
+		</div>
+		<div class="contact_map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=EOFBTwVjTs00kljQjJ4QQVPU8wK5HeDe&width=500&height=300&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+	</div>
 			
 		</li>
 	</ul>
